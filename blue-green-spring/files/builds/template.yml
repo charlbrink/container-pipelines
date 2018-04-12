@@ -76,7 +76,7 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/malacourse/simple-spring-boot-web.git
+  value: https://github.com/charlbrink/simple-spring-boot-web.git
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF
   value: "master"
@@ -85,7 +85,7 @@ parameters:
   value:
 - description: Path within Git project pointing to the pipeline run script
   name: PIPELINE_SCRIPT
-  value: pipeline.groovy
+  value: Jenkinsfile
 - description: GitHub trigger secret
   from: '[a-zA-Z0-9]{8}'
   generate: expression
@@ -102,8 +102,8 @@ parameters:
     different namespace/project.
   name: IMAGE_STREAM_NAMESPACE
   required: true
-  value: openshift
+  value: subatomic
 - description: Image stream tag for the image you'd like to use to build the application
   name: IMAGE_STREAM_TAG_NAME
   required: true
-  value: redhat-openjdk18-openshift:1.1
+  value: jdk8-maven3-newrelic-subatomic:2.0

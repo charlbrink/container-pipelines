@@ -104,7 +104,7 @@ parameters:
     different namespace/project.
   name: IMAGE_STREAM_NAMESPACE
   required: true
-  value: openshift
+  value: subatomic
 - description: Image stream tag for the image you'd like to use to build the application
   name: IMAGE_STREAM_TAG_NAME
   required: true
